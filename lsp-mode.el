@@ -661,6 +661,7 @@ Changes take effect only when a new session is started."
                                         (go-dot-mod-mode . "go")
                                         (go-mode . "go")
                                         (haskell-mode . "haskell")
+                                        (haskell-tng-mode . "haskell")
                                         (hack-mode . "hack")
                                         (php-mode . "php")
                                         (powershell-mode . "powershell")
