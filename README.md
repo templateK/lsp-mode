@@ -1,25 +1,31 @@
+---
+title: LSP Mode - Language Server Protocol support for Emacs
+description: Language Server Protocol support with multiples languages support for Emacs
+---
+
 [![](https://melpa.org/packages/lsp-mode-badge.svg)](https://melpa.org/#/lsp-mode)
 [![](https://stable.melpa.org/packages/lsp-mode-badge.svg)](https://stable.melpa.org/#/lsp-mode)
 [![](https://badges.gitter.im/emacs-lsp/lsp-mode.svg)](https://gitter.im/emacs-lsp/lsp-mode)
-[![](https://travis-ci.org/emacs-lsp/lsp-mode.svg?branch=master>)](https://travis-ci.org/emacs-lsp/lsp-mode)
-[![](https://coveralls.io/repos/github/emacs-lsp/lsp-mode/badge.svg)](https://coveralls.io/github/emacs-lsp/lsp-mode)
+[![](https://github.com/emacs-lsp/lsp-mode/workflows/CI/badge.svg)](https://github.com/emacs-lsp/lsp-mode/actions?query=workflow%3ACI)
+
 
 <img src="examples/logo.png" width="240" align="right">
 
-# Language Server Protocol Support for Emacs
+Language Server Protocol Support for Emacs
+=========================================
 
 ![LSP mode](examples/head.png)
 
 <hr>
 <p align="center">
-  <a href="https://emacs-lsp.github.io/lsp-mode"><strong>homepage</strong></a> |
-  <a href="https://emacs-lsp.github.io/lsp-mode/page/installation"><strong>installation</strong></a> |
-  <a href="https://emacs-lsp.github.io/lsp-mode/page/languages"><strong>languages</strong></a> |
-  <a href="https://emacs-lsp.github.io/lsp-mode/page/settings"><strong>settings</strong></a> |
-  <a href="https://emacs-lsp.github.io/lsp-mode/page/extensions"><strong>extensions</strong></a> |
-  <a href="https://emacs-lsp.github.io/lsp-mode/page/troubleshooting"><strong>troubleshooting</strong></a> |
-  <a href="https://emacs-lsp.github.io/lsp-mode/page/gallery"><strong>screenshots</strong></a> |
-  <a href="https://emacs-lsp.github.io/lsp-mode/page/faq"><strong>FAQ</strong></a> 
+  <a href="https://emacs-lsp.github.io/lsp-mode"><strong>homepage</strong></a> • 
+  <a href="https://emacs-lsp.github.io/lsp-mode/page/installation"><strong>installation</strong></a> • 
+  <a href="https://emacs-lsp.github.io/lsp-mode/page/languages"><strong>languages</strong></a> • 
+  <a href="https://emacs-lsp.github.io/lsp-mode/page/settings"><strong>settings</strong></a> • 
+  <a href="https://emacs-lsp.github.io/lsp-mode/page/extensions"><strong>extensions</strong></a> • 
+  <a href="https://emacs-lsp.github.io/lsp-mode/page/troubleshooting"><strong>troubleshooting</strong></a> • 
+  <a href="https://emacs-lsp.github.io/lsp-mode/page/gallery"><strong>screenshots</strong></a> • 
+  <a href="https://emacs-lsp.github.io/lsp-mode/page/faq"><strong>FAQ</strong></a>
 </p>
 <hr>
 
@@ -65,9 +71,7 @@ most popular Emacs packages like `company`, `flycheck` and `projectile`.
   - Ivy integration - [lsp-ivy](https://github.com/emacs-lsp/lsp-ivy/)
   - Treemacs integration -
     [lsp-treemacs](https://github.com/emacs-lsp/lsp-treemacs)
-  - Semantic highlighting (as currently implemented by JDT LS and
-    unreleased builds of clangd, cf. [Semantic highlighting
-    spec](https://github.com/microsoft/vscode-languageserver-node/pull/367))
+  - Semantic highlighting as defined by LSP 3.16 (compatible language servers include recent development builds of clangd and rust-analyzer)
   - [which-key](https://github.com/justbur/emacs-which-key/) integration
     for better discovery
 
@@ -207,6 +211,16 @@ primary working on/responsible for.
         Dart | Flutter | docs
       </div>
     </td>
-    <td></td>
+    <td align="center">
+      <div>
+        <a href="https://github.com/danielmartin">
+          <img src="https://github.com/danielmartin.png" width="100px;" style="border-radius: 50%;" alt="danielmartin"/>
+          <br/>
+          <sub><b>danielmartin</b></sub>
+        </a>
+        <br/>
+        C++ | Swift
+      </div>
+    </td>
   </tr>
 </table>

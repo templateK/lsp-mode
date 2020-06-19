@@ -1,4 +1,4 @@
-site_name: LSP Mode - Language Server Protocol Support for Emacs
+site_name: LSP Mode - LSP support for Emacs
 site_url: https://emacs-lsp.github.io/lsp-mode
 
 nav:
@@ -6,7 +6,6 @@ nav:
     - Overview: README.md
     - Setup:
         - Installation: page/installation.md
-        - Configuration: page/configuration.md
         - Perfomance: page/performance.md
         - Additional settings: page/additional-settings.md
     - Settings: page/settings.md
@@ -41,6 +40,7 @@ nav:
     - Eslint: page/lsp-eslint.md
     - F#: page/lsp-fsharp.md
     - Fortran: page/lsp-fortran.md
+    - GDScript: page/lsp-gdscript.md
     - Go (gopls): page/lsp-gopls.md
     - Go (bingo): page/lsp-bingo.md
     - Groovy: page/lsp-groovy.md
@@ -71,12 +71,11 @@ nav:
     - R: page/lsp-r.md
     - Ruby: page/lsp-solargraph.md
     - Rust: page/lsp-rust.md
-    - Scala: page/lsp-metals.md
+    - Scala: https://emacs-lsp.github.io/lsp-metals
     - Swift: https://emacs-lsp.github.io/lsp-sourcekit
     - Terraform: page/lsp-terraform.md
     - TeX, LaTeX, etc (digestif): page/lsp-tex.md
     - TeX, LaTeX, etc (texlab): page/lsp-texlab.md
-    - TeX, LaTeX, etc (latex): page/lsp-latex.md
     - Verilog/SystemVerilog: page/lsp-verilog.md
     - VHDL: page/lsp-vhdl.md
     - Vimscript: page/lsp-vim.md
@@ -91,7 +90,7 @@ nav:
       - page/CHANGELOG.md
 
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/layout.css
   - stylesheets/members.css
 
 extra_javascript:
@@ -121,6 +120,7 @@ repo_url: https://github.com/emacs-lsp/lsp-mode
 markdown_extensions:
   - pymdownx.superfences
   - codehilite
+  - meta
   - toc:
       permalink: '#'
   - pymdownx.emoji:

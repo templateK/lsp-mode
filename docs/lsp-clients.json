@@ -154,6 +154,14 @@
     "debugger": "Yes"
   },
   {
+    "name": "gdscript",
+    "full-name": "GDScript",
+    "server-name": "godot",
+    "server-url": "https://github.com/godotengine/godot",
+    "installation-url": "https://github.com/godotengine/godot",
+    "debugger": "Not available"
+  },
+  {
     "name": "gopls",
     "full-name": "Go",
     "server-name": "gopls",
@@ -195,18 +203,18 @@
   },
   {
     "name": "typescript",
-    "full-name": "JavaScript/TypeScript",
-    "server-name": "javascript-typescript-stdio",
+    "full-name": "JavaScript/TypeScript (theia-ide)",
+    "server-name": "typescript-language-server (recommended)",
     "server-url": "https://github.com/theia-ide/typescript-language-server",
-    "installation": "npm i -g javascript-typescript-langserver",
+    "installation": "npm i -g typescript-language-server; npm i -g typescript",
     "debugger": "Yes (Firefox/Chrome)"
   },
   {
     "name": "typescript-javascript",
-    "full-name": "JavaScript/TypeScript",
-    "server-name": "typescript-language-server (recommended)",
+    "full-name": "JavaScript/TypeScript (sourcegraph)",
+    "server-name": "javascript-typescript-stdio",
     "server-url": "https://github.com/sourcegraph/javascript-typescript-langserver",
-    "installation": "npm i -g typescript-language-server; npm i -g typescript",
+    "installation": "npm i -g javascript-typescript-langserver",
     "debugger": "Yes (Firefox/Chrome)"
   },
   {
@@ -376,29 +384,11 @@
     "debugger": "Not available"
   },
   {
-    "name": "metals",
-    "full-name": "Scala",
-    "server-name": "Metals",
-    "server-url": "https://scalameta.org/metals",
-    "installation-url": "https://scalameta.org/metals/docs/editors/emacs.html",
-    "debugger": "Not available"
-  },
-  {
     "name": "terraform",
     "full-name": "Terraform",
     "server-name": "terraform-lsp",
     "server-url": "https://github.com/juliosueiras/terraform-lsp",
     "installation": "Git clone outside of $GOPATH; go install",
-    "debugger": "Not available"
-  },
-  {
-    "name": "latex",
-    "full-name": "TeX, LaTeX, etc.",
-    "server-name": "texlab",
-    "server-url": "https://github.com/latex-lsp/texlab",
-    "client-name": "lsp-latex",
-    "client-url": "https://github.com/ROCKTAKEY/lsp-latex",
-    "installation": "cargo install --git https://github.com/latex-lsp/texlab.git",
     "debugger": "Not available"
   },
   {

@@ -1,6 +1,8 @@
 LSP Rust
 ========
 
+NOTE: If you are using `rustic-mode`, you have to change `rustic-lsp-server` instead of `lsp-rust-server`, since it also supports eglot as a lightweight alternative to lsp-mode.
+
 - `lsp-rust-server` Choose LSP server (default is RLS)
 
 - `lsp-rust-switch-server` Switch priorities of lsp servers
@@ -14,6 +16,19 @@ This is an incomplete list of the available options
 - `lsp-rust-rls-server-command` change command to start RLS
 
 - `lsp-rust-show-hover-context` turn off hover tooltips
+
+## rustfmt
+
+Code formatting with [rustfmt](https://github.com/rust-lang/rustfmt) can be configured with:
+
+`lsp-rust-rustfmt-path` change default path for rustfmt executable
+
+To enable automatic code format on save, add this to your `init.el` (`rust-mode` is assumed to be installed):
+
+```
+(add-hook 'before-save-hook (lambda () (when (eq 'rust-mode major-mode)
+                                           (lsp-format-buffer))))
+```
 
 ## rust-analyzer
 
@@ -61,7 +76,7 @@ Display status information for rust-analyzer
 
 ![](../examples/lsp-rust-analyzer-status.png)
 
-#### `lsp-rust-analyzer-join-lines` 
+#### `lsp-rust-analyzer-join-lines`
 
 Join selected lines into one, smartly fixing up whitespace and trailing commas
 
