@@ -3586,9 +3586,10 @@ disappearing, unset all the variables related to it."
                            (lsp:did-change-watched-files-registration-options-watchers)
                            (seq-find
                             (-lambda ((&FileSystemWatcher :glob-pattern))
-                              (-let [glob-regex (eshell-glob-regexp glob-pattern)]
-                                (or (string-match glob-regex changed-file)
-                                    (string-match glob-regex (f-relative changed-file root-folder)))))))))))
+                              (when glob-pattern
+                                (-let [glob-regex (eshell-glob-regexp glob-pattern)]
+                                  (or (string-match glob-regex changed-file)
+                                      (string-match glob-regex (f-relative changed-file root-folder))))))))))))
                  (with-lsp-workspace workspace
                    (lsp-notify
                     "workspace/didChangeWatchedFiles"
