@@ -24,11 +24,13 @@
 
 ;;; Code:
 
-(require 'ert)
-(require 'lsp-mode)
-(require 'f)
 (require 'deferred)
 (require 'dash)
+(require 'ert)
+(require 'f)
+
+(require 'lsp-mode)
+(require 'lsp-modeline)
 
 (defconst lsp-test-location (file-name-directory (or load-file-name buffer-file-name)))
 
@@ -181,8 +183,9 @@
             (should (equal (lsp--point-to-position (point))
                            '(:line 0 :character 0)))
 
-            (should (equal (lsp--position-to-point (ht ("line" 0)
-                                                       ("character" 0)))
+            (should (equal (lsp--position-to-point (lsp-make-position
+                                                    :line 0
+                                                    :character 0))
                            (point))))
           (deferred:try
             :finally (lambda (&rest _)

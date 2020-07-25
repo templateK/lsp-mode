@@ -54,7 +54,8 @@
  (make-lsp-client :new-connection (lsp-stdio-connection
                                    (lambda ()
                                      (list lsp-perl-language-server-path
-                                           (format "-MPerl::LanguageServer -e Perl::LanguageServer::run -- --port %o --version %s"
+                                           "-MPerl::LanguageServer" "-e" "Perl::LanguageServer::run" "--" 
+                                           (format "--port %d --version %s"
                                                    lsp-perl-language-server-port lsp-perl-language-server-client-version))))
                   :major-modes '(perl-mode cperl-mode)
                   :priority -1
@@ -63,6 +64,3 @@
 (provide 'lsp-perl)
 ;;; lsp-perl.el ends here
 
-;; Local Variables:
-;; flycheck-disabled-checkers: (emacs-lisp-checkdoc)
-;; End:
